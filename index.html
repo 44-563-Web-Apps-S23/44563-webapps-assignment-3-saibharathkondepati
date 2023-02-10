@@ -72,18 +72,14 @@
             </code>
         </pre>
         <blockquote> Type juggling in PHP</blockquote>
-        <a href="https://stackoverflow.com/questions/75349543/type-juggling-in-php">Link to the Type juggling in PHP</a>
+        <a href="https://css-tricks.com/snippets/php/read-write-files">Link to the Type juggling in PHP</a>
         <pre>
-          ?php
-          if (0 == 0e123)
-          {
-          echo "True";
-          } 
-          else
-          {
-          echo "False";
-          }
-          ?>
+          function fileRead($file){
+            $lines = file($file);
+            foreach ($lines as $line_num => $line) {
+               echo  $line,  '</br>';
+            }
+         }
         </pre>
 
       </body>
